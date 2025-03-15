@@ -114,7 +114,7 @@ if st.session_state.show_question:
     if user_answer:
         st.session_state.user_answer = user_answer  
         if user_answer.lower() == st.session_state.landmark.lower():
-            st.success("Правильно! Вы угадали!")
+            st.success("Правильно! Вы угадали! Вот ссылка для 3 главы: https://chapter-3.streamlit.app/")
             rrr = opis(st.session_state.access_token, st.session_state.landmark)
             st.write(rrr)
             st.session_state.show_question = False  
